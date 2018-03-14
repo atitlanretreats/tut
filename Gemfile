@@ -66,3 +66,4 @@ group :development do
 end
 
 gem 'blah_blah_gem', git: 'https://github.com/atitlanretreats/blah_blah_gem'
+gem 'petergate', '~> 1.7'
