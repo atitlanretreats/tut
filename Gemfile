@@ -64,3 +64,5 @@ group :development do
   gem "better_errors"
   gem "binding_of_caller"
 end
+
+gem 'blah_blah_gem', git: 'https://github.com/atitlanretreats/blah_blah_gem'
