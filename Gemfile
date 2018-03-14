@@ -57,6 +57,9 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'devise', '~> 4.4', '>= 4.4.1'
 
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
