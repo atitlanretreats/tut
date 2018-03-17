@@ -67,3 +67,5 @@ end
 
 gem 'blah_blah_gem', git: 'https://github.com/atitlanretreats/blah_blah_gem'
 gem 'petergate', '~> 1.7'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
