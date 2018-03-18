@@ -1,13 +1,33 @@
-<%= image_tag @portfolio_item.main_image %>
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <h1><%= @portfolio_item.title %></h1>
+  <% if logged_in?(:site_admin) %>
+    <p class="blog-post-meta">
+      <%= link_to 'Edit', edit_portfolio_path %> /
+      <%= link_to 'Destroy', portfolio_path, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    </p>
+  <% end %>
+  <div class="row">
+    <div class="col-md-7">
+      <%= image_tag @portfolio_item.main_image %>
+      <hr>
+      <h3><%= link_to "View Entire Portfolio", portfolios_path %></h3>
+    </div>
+    <div class="col-md-5">
 
-<h1><%= @portfolio_item.title %></h1>
+      <em><%= @portfolio_item.subtitle %></em>
 
-<em><%= @portfolio_item.subtitle %></em>
+      <p><%= @portfolio_item.body %></p>
 
-<p><%= @portfolio_item.body %></p>
+      <hr>
 
-<h2>Technologies Used</h2>
+      <h3>Technologies Used</h3>
 
-<% @portfolio_item.technologies.each do |t| %>
-  <p><%= t.name %></p>
-<% end %>
+      <% @portfolio_item.technologies.each do |t| %>
+        <p><%= t.name %></p>
+      <% end %>
+    </div>
+  </div>
+</duv>
